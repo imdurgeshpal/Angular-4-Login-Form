@@ -3,6 +3,7 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
 import{UserComponent} from './user/user.component';
 import{AboutComponent} from './about/about.component';
 import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
+import { StudentviewComponent  } from './student/studentview/studentview.component';
 import { StudentregistrationComponent} from './student/studentregistration/studentregistration.component';
 @NgModule({
     imports: [
@@ -10,7 +11,8 @@ import { StudentregistrationComponent} from './student/studentregistration/stude
          { path: 'user', component: UserComponent },
          { path: 'about', component: AboutComponent },
          { path: 'studentlogin', component: StudentloginComponent },
-         { path: 'studentregisteration', component: StudentregistrationComponent }
+         { path: 'studentregisteration', component: StudentregistrationComponent },
+         { path: 'studentview', component: StudentviewComponent }
          
 
     ],{preloadingStrategy:PreloadAllModules})

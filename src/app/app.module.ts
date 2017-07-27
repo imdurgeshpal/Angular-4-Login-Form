@@ -16,6 +16,7 @@ import {StudentService} from './student/studentservice/student.service';
 
 import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
 import { StudentregistrationComponent } from './student/studentregistration/studentregistration.component';
+import { StudentviewComponent } from './student/studentview/studentview.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { StudentregistrationComponent } from './student/studentregistration/stud
     AboutComponent,
     NavComponent,
     StudentloginComponent,
-    StudentregistrationComponent
+    StudentregistrationComponent,
+    StudentviewComponent
   ],
   imports: [
     BrowserModule,

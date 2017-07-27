@@ -14,7 +14,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"  [(ngModel)]="newStudent.name"/>
 								</div>
 							</div>
 						</div>
@@ -24,7 +24,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"  [(ngModel)]="newStudent.email"/>
 								</div>
 							</div>
 						</div>
@@ -34,7 +34,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"  [(ngModel)]="newStudent.username"/>
 								</div>
 							</div>
 						</div>
@@ -60,7 +60,7 @@
 						</div>
 
 						<div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"  (click)="registerStudent(newStudent)">Register</button>
 						</div>
 						<div class="login-register">
 				            <a routerLink="/studentlogin" routerLinkActive="active">Login</a>
